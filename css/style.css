@@ -165,7 +165,7 @@ body {
   grid-column: full-start / col-end 6;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
   padding: 3rem;
   padding-top: 4rem;
@@ -180,10 +180,10 @@ body {
     padding-right: .5rem; }
   @media only screen and (max-height: 43.75em) {
     .header-button {
-      padding: 1.2rem 2rem; } }
+      padding: .7rem .5rem; } }
   @media only screen and (max-height: 25.6em) {
     .header-button {
-      padding: .5rem 2rem; } }
+      padding: .5rem; } }
   @media only screen and (max-height: 25em) {
     .header-button {
       display: none; } }
@@ -215,32 +215,20 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 80%;
+  width: 50%;
   margin: 0 auto; }
-  @media only screen and (max-width: 31.25em) {
-    .talking-about-us-logos {
-      width: 50%; } }
 
 .talking-logo-1 {
-  height: 2.5rem;
+  height: 1.5rem;
   filter: brightness(70%); }
-  @media only screen and (max-width: 31.25em) {
-    .talking-logo-1 {
-      height: 1.5rem; } }
 
 .talking-logo-2 {
-  height: 2.8rem;
+  height: 1.8rem;
   filter: brightness(70%); }
-  @media only screen and (max-width: 31.25em) {
-    .talking-logo-2 {
-      height: 1.8rem; } }
 
 .talking-logo-3 {
-  height: 2.5rem;
+  height: 1.5rem;
   filter: brightness(70%); }
-  @media only screen and (max-width: 31.25em) {
-    .talking-logo-3 {
-      height: 1.5rem; } }
 
 .prizes {
   background-color: #101d2c;
