@@ -215,8 +215,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 70%;
-  margin: 0 auto; }
+  width: 100%;
+   }
 
 .talking-logo-1 {
   height: 1.5rem;
