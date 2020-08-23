@@ -329,8 +329,7 @@ body {
       margin-bottom: 3rem; } }
   @media only screen and (max-width: 25.6em) {
     .story-content p {
-      line-height: 1.2;
-      font-size: .5rem; } }
+      line-height: 1.2; } }
   @media only screen and (max-width: 15.7em) {
     .story-content p {
       line-height: .9; } }
