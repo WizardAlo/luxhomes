@@ -166,7 +166,7 @@ body {
   display: grid;
   /* grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr; */
   grid-template-columns: minmax(min-content, max-content);
-  grid-template-rows: auto;
+  grid-template-rows: repeat(5, 1fr);
   grid-row-gap: .5rem;
   justify-content: center;
   padding: 3rem;
@@ -182,11 +182,12 @@ body {
     height: 4rem;
     width: 4rem;
     padding-right: .5rem; }
-  .header-link {
-    /* grid-row: 5 / 6; */ }
   @media only screen and (max-height: 43.75em) {
     .header-button {
       padding: 1.2rem 2rem; } }
+  @media only screen and (max-height: 25.6em) {
+    .header-button {
+      padding: .5rem 2rem; } }
   .header-button:active {
     outline: none;
     border: none; }
@@ -218,6 +219,9 @@ body {
   grid-template-columns: 1fr max-content 1fr;
   grid-column-gap: 1.5rem;
   align-items: center; }
+  @media only screen and (max-height: 25.6em) {
+    .talking-about-us {
+      align-self: end; } }
   .talking-about-us::before, .talking-about-us::after {
     content: "";
     height: 1px;
@@ -231,6 +235,9 @@ body {
   grid-column-gap: 3rem;
   justify-items: center;
   align-items: center; }
+  @media only screen and (max-height: 25.6em) {
+    .talking-about-us-logos {
+      align-self: end; } }
 
 .talking-logo-1 {
   height: 2.5rem;
@@ -248,7 +255,7 @@ body {
   background-color: #101d2c;
   grid-column: col-start 7 / full-end;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: auto;
   align-items: center;
   justify-content: center; }
   .prizes-1, .prizes-2, .prizes-3 {
@@ -270,7 +277,7 @@ body {
     justify-self: center; }
     @media only screen and (max-height: 25.6em) {
       .prizes-logo {
-        height: 4rem; } }
+        height: 2.5rem; } }
 
 .features {
   grid-column: center-start / center-end;
