@@ -163,21 +163,17 @@ body {
 .header {
   background-color: #54483A;
   grid-column: full-start / col-end 6;
-  display: grid;
-  /* grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr; */
-  grid-template-columns: minmax(min-content, max-content);
-  grid-template-rows: repeat(5, 1fr);
-  grid-row-gap: .5rem;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
   padding: 3rem;
   padding-top: 4rem;
-  align-items: center;
   background-image: linear-gradient(rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url(../img/lux13.jpg);
   background-size: cover;
   background-position: center; }
   .header-logo-container {
-    justify-self: center;
-    /* grid-row: 1 / 2; */ }
+    align-self: center; }
   .header-logo {
     height: 4rem;
     width: 4rem;
@@ -191,18 +187,9 @@ body {
   .header-button:active {
     outline: none;
     border: none; }
-  .header .heading-1 {
-    /* grid-row: 3 / 4; */
-    align-self: end; }
-    @media only screen and (max-height: 31.25em) {
-      .header .heading-1 {
-        font-size: 3rem; } }
-  .header .heading-3 {
-    /* grid-row: 2 / 3; */
-    align-self: end; }
-    @media only screen and (max-height: 31.25em) {
-      .header .heading-3 {
-        display: none; } }
+  @media only screen and (max-height: 31.25em) {
+    .header .heading-1 {
+      font-size: 3rem; } }
 
 .logo-heading {
   font-size: 2.7rem;
@@ -212,32 +199,23 @@ body {
   transform: translateY(-0.5rem); }
 
 .talking-about-us {
-  /* grid-row: 6 / 7; */
+  align-self: center;
   font-size: 1.6rem;
   color: #aaa;
-  display: grid;
-  grid-template-columns: 1fr max-content 1fr;
-  grid-column-gap: 1.5rem;
-  align-items: center; }
-  @media only screen and (max-height: 25.6em) {
-    .talking-about-us {
-      align-self: end; } }
-  .talking-about-us::before, .talking-about-us::after {
-    content: "";
-    height: 1px;
-    display: block;
-    background-color: currentColor; }
+  border-bottom: 0.5px solid #aaa;
+  /*    &::before,
+    &::after {
+        content: "";
+        height: 1px;
+        display: block;
+        background-color: currentColor;
+    } */ }
 
 .talking-about-us-logos {
-  /* grid-row: 7 / 8; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 3rem;
-  justify-items: center;
-  align-items: center; }
-  @media only screen and (max-height: 25.6em) {
-    .talking-about-us-logos {
-      align-self: end; } }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%; }
 
 .talking-logo-1 {
   height: 2.5rem;
@@ -254,30 +232,27 @@ body {
 .prizes {
   background-color: #101d2c;
   grid-column: col-start 7 / full-end;
-  display: grid;
-  grid-template-rows: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: center; }
+  justify-content: space-around;
+  padding: 5rem 2rem; }
   .prizes-1, .prizes-2, .prizes-3 {
     color: #f9f7f6;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 1rem;
-    justify-content: center;
     font-size: 1.5rem;
     text-align: center; }
-    @media only screen and (max-width: 62.5em) {
-      .prizes-1, .prizes-2, .prizes-3 {
-        margin: 0 5rem; } }
-    @media only screen and (max-height: 25.6em) {
-      .prizes-1, .prizes-2, .prizes-3 {
-        font-size: 1rem; } }
   .prizes-logo {
-    height: 5rem;
-    justify-self: center; }
-    @media only screen and (max-height: 25.6em) {
+    height: 5rem; }
+    @media only screen and (max-height: 37.5em) {
       .prizes-logo {
-        height: 2.5rem; } }
+        height: 3rem; } }
+  @media only screen and (max-height: 41em) {
+    .prizes h3 {
+      font-size: 1.5rem; } }
+  @media only screen and (max-height: 37.5em) {
+    .prizes h3 {
+      font-size: 1rem; } }
 
 .features {
   grid-column: center-start / center-end;
