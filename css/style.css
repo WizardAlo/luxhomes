@@ -202,20 +202,14 @@ body {
   align-self: center;
   font-size: 1.6rem;
   color: #aaa;
-  border-bottom: 0.5px solid #aaa;
-  /*    &::before,
-    &::after {
-        content: "";
-        height: 1px;
-        display: block;
-        background-color: currentColor;
-    } */ }
+  border-bottom: 0.5px solid #aaa; }
 
 .talking-about-us-logos {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100%; }
+  width: 80%;
+  margin: 0 auto; }
 
 .talking-logo-1 {
   height: 2.5rem;
