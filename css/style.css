@@ -453,7 +453,7 @@ body {
   padding: 5rem; }
   @media only screen and (max-width: 31.25em) {
     .footer {
-      padding: 1rem; } }
+      padding: 3rem; } }
 
 .nav {
   list-style: none;
